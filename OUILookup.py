@@ -122,7 +122,6 @@ Use: ./OUILookup --ip <IP> | --mac <MAC> | --arp | [--help]
         # Comando --arp
         elif opt in ("-a", "--arp"):
             diccionario_arp = obtener_tabla_arp()
-            print()
             print("IP\t/\tMAC\t/\t/Vendor")
             for ip in diccionario_arp:
                 mac,vendor = obtener_datos_por_mac(diccionario_arp[ip])
